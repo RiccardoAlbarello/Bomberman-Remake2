@@ -6,6 +6,7 @@ public class BombScript : MonoBehaviour
 {
 
     public GameObject colliderCubo;
+    public float timerBomb = 3f;
     
     
     // Start is called before the first frame update
@@ -17,6 +18,9 @@ public class BombScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       Destroy(gameObject, 3);
+       
+
         
     }
 
@@ -25,7 +29,7 @@ public class BombScript : MonoBehaviour
             if(other.CompareTag("Player"))
             {
             colliderCubo.SetActive(true);
-            Debug.Log("Diocanespawna");
+            
             }
     }
 }
