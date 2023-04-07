@@ -556,6 +556,10 @@ PrefabInstance:
       propertyPath: pM
       value: 
       objectReference: {fileID: 755204402}
+    - target: {fileID: 8109487235905886801, guid: 20cba1d34fa483444a56ebe48f400422, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 8109487235905886806, guid: 20cba1d34fa483444a56ebe48f400422, type: 3}
       propertyPath: m_RootOrder
       value: 3
