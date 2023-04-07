@@ -59,7 +59,7 @@ public class PlayerMovement2 : MonoBehaviour
     //    }
     //}
 
-    private bool isMoving;
+    public bool isMoving;
     private Vector3 origPos, targetPos;
     public float timeToMove = 0.5f;
 
