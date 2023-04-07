@@ -13,11 +13,11 @@ public class BarrelPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            var spawnedBullet = Instantiate(proiettile, barrel.position, barrel.rotation);
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetButtonDown("Jump"))
+    //    {
+    //        var spawnedBullet = Instantiate(proiettile, barrel.position, barrel.rotation);
+    //    }
+    //}
 }

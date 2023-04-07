@@ -4,28 +4,56 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
-    public enum GamepadButton
-    {
-        
-    }
+
+    public BoxColliderDestra bD;
+    public BoxColliderGiu bG;
+    public BoxColliderSinistra bS;
+    public BoxColliderSu bSu;
+
+
     //private void Update()
     //{
-    //    if (Input.GetKeyDown(KeyCode.W))
-    //    {
-    //        transform.(0, 0, 2f);
-    //    }
 
-    //    if (Input.GetKeyDown(KeyCode.S))
+    //    SuK();
+    //    GiuK();
+    //    DestraK();
+    //    SinistraK();
+
+
+
+
+
+    //}
+
+
+
+    //public void SuK()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.W) && bSu.su)
+    //    {
+    //        transform.Translate(0, 0, 2f);
+    //    }
+    //}
+
+    //public void GiuK()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.S) && bG.giu)
     //    {
     //        transform.Translate(0, 0, -2f);
     //    }
+    //}
 
-    //    if (Input.GetKeyDown(KeyCode.D))
+    //public void DestraK()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.D) && bD.destra)
     //    {
     //        transform.Translate(2f, 0, 0);
     //    }
 
-    //    if (Input.GetKeyDown(KeyCode.A))
+    //}
+    //public void SinistraK()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.A) && bS.sinistra)
     //    {
     //        transform.Translate(-2f, 0, 0);
     //    }
@@ -37,24 +65,24 @@ public class PlayerMovement2 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.W) && !isMoving && bSu.su)
         {
             StartCoroutine(MovePlayer(Vector3.forward * 2));
         }
 
-        if (Input.GetKeyDown(KeyCode.A) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.A) && !isMoving && bS.sinistra)
         {
             StartCoroutine(MovePlayer(Vector3.left * 2));
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.S) && !isMoving && bG.giu)
         {
             StartCoroutine(MovePlayer(Vector3.back * 2));
 
 
         }
 
-        if (Input.GetKeyDown(KeyCode.D) && !isMoving)
+        if (Input.GetKeyDown(KeyCode.D) && !isMoving && bD.destra)
         {
             StartCoroutine(MovePlayer(Vector3.right * 2));
         }
