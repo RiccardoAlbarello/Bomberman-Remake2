@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderCubo: {fileID: 4622812258241189700}
   timerBomb: 3
+  mR: {fileID: 2967638183955916845}
 --- !u!65 &478050790727823028
 BoxCollider:
   m_ObjectHideFlags: 0
