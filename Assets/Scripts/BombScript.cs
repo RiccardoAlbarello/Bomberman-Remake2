@@ -41,7 +41,7 @@ public class BombScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Destroy(gameObject, 3);
+        Destroy(gameObject, 5);
         
         if(esplosione == true)
         {
@@ -64,7 +64,7 @@ public class BombScript : MonoBehaviour
         }
 
 
-
+        
         
     }
 
