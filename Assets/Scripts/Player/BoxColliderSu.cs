@@ -5,6 +5,7 @@ using UnityEngine;
 public class BoxColliderSu : MonoBehaviour
 {
     public bool su = true;
+    public bool su2 = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,11 @@ public class BoxColliderSu : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             su = false;
-            Debug.Log("Ciao");
+            //Debug.Log("Ciao");
+        }
+        if (other.CompareTag("BloccoDaDistruggere"))
+        {
+            su2 = false;
         }
     }
 
@@ -31,6 +36,10 @@ public class BoxColliderSu : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             su = true;
+        }
+        if (other.CompareTag("BloccoDaDistruggere"))
+        {
+            su2 = true;
         }
     }
 }

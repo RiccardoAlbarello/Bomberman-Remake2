@@ -5,6 +5,7 @@ using UnityEngine;
 public class BoxColliderDestra : MonoBehaviour
 {
     public bool destra = true;
+    public bool destra2 = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +23,12 @@ public class BoxColliderDestra : MonoBehaviour
         if(other.CompareTag("Wall"))
             {
                 destra = false;
-                Debug.Log("Ciao");
+                //Debug.Log("Ciao");
             }
+        if (other.CompareTag("BloccoDaDistruggere"))
+        {
+            destra2 = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -31,6 +36,10 @@ public class BoxColliderDestra : MonoBehaviour
         if(other.CompareTag("Wall"))
         {
             destra = true;
+        }
+        if (other.CompareTag("BloccoDaDistruggere"))
+        {
+            destra2 = true;
         }
     }
 }

@@ -93,7 +93,7 @@ BoxCollider:
   m_GameObject: {fileID: 7448300706284039662}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -107,9 +107,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5543020874382507764}
   - component: {fileID: 2907764664608557097}
+  - component: {fileID: 5383181458934417186}
+  - component: {fileID: 1415176442427579285}
   m_Layer: 0
   m_Name: FolderPrefabAvanti
-  m_TagString: Untagged
+  m_TagString: Esplosione
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +144,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d7489b3dc57c446a2babff9ad1fc6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5383181458934417186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019682417585446588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 1.5}
+--- !u!54 &1415176442427579285
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019682417585446588}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Wall
   - RandomPoint
+  - Esplosione
+  - BloccoDaDistruggere
+  - Enemy
   layers:
   - Default
   - TransparentFX

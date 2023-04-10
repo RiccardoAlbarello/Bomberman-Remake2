@@ -15,4 +15,6 @@ public class EsplosioneAvanti : MonoBehaviour
     {
         Destroy(gameObject, 0.5f);
     }
+
+    
 }
