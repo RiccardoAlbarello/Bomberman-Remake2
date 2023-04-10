@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnMuriSopraESotto : MonoBehaviour
+public class BlocchiCentrali : MonoBehaviour
 {
-
     public int sizeX;
     public int sizeZ;
+
+    public GameObject muro;
 
     public float distanzaX;
     public float distanzaZ;
 
-    public GameObject muro;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,12 @@ public class SpawnMuriSopraESotto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
 
     void Matrix()
     {
-
         for (int i = 0; i < sizeX; i++)
         {
             for (int j = 0; j < sizeZ; j++)
@@ -36,5 +37,8 @@ public class SpawnMuriSopraESotto : MonoBehaviour
                 tmp.transform.localPosition = new Vector3(i * distanzaX, 0, j * distanzaZ);
             }
         }
+
+       
+    
     }
 }
