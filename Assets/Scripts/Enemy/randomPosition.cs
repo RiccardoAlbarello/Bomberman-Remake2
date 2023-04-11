@@ -10,8 +10,8 @@ public class randomPosition : MonoBehaviour
     public NavMeshAgent nma = null;
     public GameObject[] RandomPoint;
     private int CurrentRandom;
-
     public SceneMenu mS;
+    
 
     private void Start()
     {

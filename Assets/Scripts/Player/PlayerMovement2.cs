@@ -81,7 +81,7 @@ public class PlayerMovement2 : MonoBehaviour
 
         if(other.CompareTag("Esplosione"))
         {
-            vita--;
+            sM.GameOver();
         }
     }
 
