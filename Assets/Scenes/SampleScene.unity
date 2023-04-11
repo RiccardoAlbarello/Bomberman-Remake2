@@ -922,7 +922,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8109487235905886802, guid: 20cba1d34fa483444a56ebe48f400422, type: 3}
   m_PrefabInstance: {fileID: 1451308667}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948378925}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3981c5f237c73f446b125326c8487f19, type: 3}
@@ -933,6 +933,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5491329249205671720, guid: f1bbc860ef17db947b6eabc7e6078a9b, type: 3}
   m_PrefabInstance: {fileID: 1560797638}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &771246725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8276452438276288936, guid: 348f17dcb0d283847916a68e38ad5183, type: 3}
+  m_PrefabInstance: {fileID: 8276452437248442633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &771246733
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771246725}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &772991108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5491329249205671720, guid: f1bbc860ef17db947b6eabc7e6078a9b, type: 3}
@@ -2273,27 +2294,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5491329249205671720, guid: f1bbc860ef17db947b6eabc7e6078a9b, type: 3}
   m_PrefabInstance: {fileID: 1841206276}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1948378925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8109487235905886813, guid: 20cba1d34fa483444a56ebe48f400422, type: 3}
-  m_PrefabInstance: {fileID: 1451308667}
-  m_PrefabAsset: {fileID: 0}
---- !u!208 &1948378930
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948378925}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1001 &1992347818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2882,7 +2882,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8276452438276288929, guid: 348f17dcb0d283847916a68e38ad5183, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8276452438276288932, guid: 348f17dcb0d283847916a68e38ad5183, type: 3}
       propertyPath: mS
